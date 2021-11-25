@@ -63,6 +63,7 @@ body{
 }
 .card-container .content-container p{
     padding: 20px 35px;
+    color: var(--Desaturated-blue);
 }
 .card-container .plan-container {
    display: flex;
@@ -85,6 +86,9 @@ body{
 }
 .plan-container span:first-of-type + span h4{
     font-size: 13px;
+}
+.plan-container span:first-of-type + span h5{
+    color: var(--Desaturated-blue);
 }
 
 .card-container .payment-container{
