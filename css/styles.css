@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------- Colors Giving in the Style Guide Template */
+
+/* ## Colors */
+
+/* ### Primary */
+:root{
+
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+/* ### Neutral */
+
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+
+}
+
+body{
+    font-size: 16px;
+    background-color: var(--Very-pale-blue);
+    background: url(../images/pattern-background-mobile.svg);
+    background-position: center;
+    background-size: cover;
+
+}
+.main-container{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+.main-container .card-container{
+    margin: 40px 20px;
+    /* border: 1px solid var(--); */
+    box-shadow: 2px 3px 30px hsl(225, 100%, 94%); 
+    border-radius: 20px;
+    background-color: white;
+}  
+.card-container   .image-bg-container img{
+    max-width: 100%;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px ;
+}
+.card-container div:not(:first-of-type) {
+    padding: 20px 20px ;
+}
+.card-container .content-container h2{
+    font-size: 1.7rem;
+}
+.card-container .content-container p{
+    padding: 20px 40px;
+}
+.card-container .plan-container {
+   display: flex;
+   justify-content: center;
+   background-color: var(--Very-pale-blue);
+   padding: 15px 0px;
+   margin: 0px 20px;
+   border-radius: 10px;
+}
+.plan-container span:first-of-type{
+    padding: 10px;
+    background-color: var(--Pale-blue);
+    border-radius: 50px;
+}
+.plan-container span:first-of-type i{
+    color: var(--Desaturated-blue);
+}
+.plan-container span:first-of-type + span{
+    margin: 0px 50px 0px 25px ;
+}
+
+.card-container .payment-container{
+    margin: 10px 0px;
+}
+.card-container .payment-container a{
+    display: block;
+}
+.card-container .payment-container a:first-of-type{
+    margin-bottom: 10px;
+
+}
+.card-container .payment-container a:first-of-type button{
+    padding: 20px 0px ;
+    width: 100%;
+    background-color: var(--Bright-blue);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 2px 3px 30px hsl(225, 100%, 94%); 
+}
+
+@media screen and (min-width: 1400px){
+    
+    body{
+    background: url(../images/pattern-background-desktop.svg);
+    background-position: top right;
+    background-size: cover;
+    background-color: var(--Very-pale-blue);
+    background-blend-mode: overlay;
+
+}
+
+}
