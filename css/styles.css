@@ -46,7 +46,7 @@ body{
 
 }
 .main-container .card-container{
-    margin: 40px 20px;
+    margin: 40px 10px;
     box-shadow: 2px 3px 30px hsl(225, 100%, 94%); 
     border-radius: 20px;
     background-color: white;
