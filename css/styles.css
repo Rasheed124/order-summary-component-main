@@ -37,6 +37,7 @@ body{
     justify-content: center;
     align-items: center;
     font-family: "Red Hat Display", sans-serif;
+    overflow-x: hidden ;
 
 
 }
